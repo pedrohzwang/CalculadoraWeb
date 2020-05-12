@@ -1,16 +1,20 @@
 var labelResultado = document.getElementById("resultado");
 var labelCalculo = document.getElementById("calculo");
 
-function getNum(numero){
-    labelResultado.innerText = labelResultado.innerText + numero;
+function getButtonValue(value){
+    labelCalculo.innerText = labelCalculo.innerText + value;
 };  
 
 function deleteLastCharacter(){
-    
+
 }
 
 function clean(){
-    labelResultado.innerText = "";
     labelCalculo.innerText = "";
 }
 
+function result(){
+    var calcResult = eval(labelCalculo.innerText);
+    labelResultado.innerText = calcResult;
+    clean();
+}
