@@ -1,11 +1,16 @@
-var labelResultado = document.getElementById("resultado").value;
+var labelResultado = document.getElementById("resultado");
 var labelCalculo = document.getElementById("calculo");
 
-function getValue(value){
-    labelResultado.innerHTML = value;
+function getNum(numero){
+    labelResultado.innerText = labelResultado.innerText + numero;
 };  
 
-function alterarValorLabel(){
-    labelResultado.innerHTML = "";
-};
+function deleteLastCharacter(){
+    
+}
+
+function clean(){
+    labelResultado.innerText = "";
+    labelCalculo.innerText = "";
+}
 
