@@ -6,7 +6,8 @@ function getButtonValue(value){
 };  
 
 function deleteLastCharacter(){
-
+    var newStringLabel = calcLabel.substring(0, calcLabel.innerText.length-1);
+    calcLabel = newStringLabel;
 }
 
 function clean(){
