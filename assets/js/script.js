@@ -18,3 +18,8 @@ function result(){
     resultLabel.innerText = calcResult;
     clean();
 }
+
+function percent(){
+    alert(stringCalc);
+    var stringCalc = calcLabel.search("%");
+}
