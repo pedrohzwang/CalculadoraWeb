@@ -6,8 +6,7 @@ function getButtonValue(value){
 };  
 
 function deleteLastCharacter(){
-    var newStringLabel = calcLabel.substring(0, calcLabel.innerText.length-1);
-    calcLabel = newStringLabel;
+    calcLabel.innerText = calcLabel.innerText.substring(0, calcLabel.innerText.length-1);
 }
 
 function clean(){
@@ -17,10 +16,6 @@ function clean(){
 function result(){
     var calcResult = eval(calcLabel.innerText);
     resultLabel.innerText = calcResult;
-    clean();
+    clean(calcLabel.innerText);
 }
 
-function percent(){
-    alert(stringCalc);
-    var stringCalc = calcLabel.search("%");
-}

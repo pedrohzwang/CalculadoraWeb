@@ -41,11 +41,11 @@
                 </div>
 
                 <div class="col-sm-3">
-                    <button onclick='deleteLastCharacter()'>Apagar</button>
+                    <button onclick='deleteLastCharacter()'>DEL</button>
                 </div>
 
                 <div class="col-sm-3">
-                    <button onclick='percent()'>%</button>
+                    <button onclick='getButtonValue("-")'>-</button>
                 </div>
 
                 <div class="col-sm-3">
@@ -83,7 +83,7 @@
                 </div>
 
                 <div class="col-sm-3">
-                    <button onclick='getButtonValue("-")'>-</button>
+                    <button onclick='getButtonValue("+")'>+</button>
                 </div>
             </div>
             <div class="row">
@@ -100,21 +100,16 @@
                 </div>
 
                 <div class="col-sm-3">
-                    <button onclick='getButtonValue("+")'>+</button>
+                    <button onclick='getButtonValue(0)'>0</button>
                 </div>
             </div>
             <div class="row">
 
-
-                <div class="col-sm-4">
-                    <button onclick='getButtonValue(0)'>0</button>
-                </div>
-
-                <div class="col-sm-4">
+                <div class="col-sm-5">
                     <button onclick='getButtonValue(".")'>.</button>
                 </div>
 
-                <div class="col-sm-4">
+                <div class="col-sm-5 offset-2">
                     <button onclick='result()'>=</button>
                 </div>
             </div>
