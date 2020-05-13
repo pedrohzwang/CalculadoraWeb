@@ -1,8 +1,8 @@
-var labelResultado = document.getElementById("resultado");
-var labelCalculo = document.getElementById("calculo");
+var resultLabel = document.getElementById("resultado");
+var calcLabel = document.getElementById("calculo");
 
 function getButtonValue(value){
-    labelCalculo.innerText = labelCalculo.innerText + value;
+    calcLabel.innerText = calcLabel.innerText + value;
 };  
 
 function deleteLastCharacter(){
@@ -10,11 +10,11 @@ function deleteLastCharacter(){
 }
 
 function clean(){
-    labelCalculo.innerText = "";
+    calcLabel.innerText = "";
 }
 
 function result(){
-    var calcResult = eval(labelCalculo.innerText);
-    labelResultado.innerText = calcResult;
+    var calcResult = eval(calcLabel.innerText);
+    resultLabel.innerText = calcResult;
     clean();
 }
