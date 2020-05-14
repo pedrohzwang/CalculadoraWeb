@@ -9,13 +9,18 @@ function deleteLastCharacter(){
     calcLabel.innerText = calcLabel.innerText.substring(0, calcLabel.innerText.length-1);
 }
 
-function clean(){
+function reset(){
     calcLabel.innerText = "";
+    
 }
+
+function clean(){
+    resultLabel.innerText = "";
+}
+
 
 function result(){
-    var calcResult = eval(calcLabel.innerText);
-    resultLabel.innerText = calcResult;
-    clean(calcLabel.innerText);
+var calcResult = eval(calcLabel.innerText);
+resultLabel.innerText = calcResult;
+    reset();
 }
-
